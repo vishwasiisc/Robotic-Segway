@@ -1,0 +1,16 @@
+function Mm = mycontroller(z,p);
+%unpack z
+theta = z(1); phi = z(2); thetadot= z(3); phidot= z(4);
+
+%unpack p
+Is = p.Is;
+Iw = p.Iw;
+R  = p.R;
+d  = p.d;
+g  = p.g;
+ms = p.ms;
+mw = p.mw;
+
+Mm = -6*theta ;
+end
+
